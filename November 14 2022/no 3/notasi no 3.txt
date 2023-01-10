@@ -1,0 +1,12 @@
+judul : Assigment
+Programer	: Azmi Jalaluddin Amron
+Modify	: ke 1 pada 7:30 14/11/2022
+
+kamus
+	hello, kabar <-- string
+
+deksripsi
+	hello = "HELLO SEMARANG"
+	kabar = "APAKABAR HARI INI"
+	output hello
+	output kabar

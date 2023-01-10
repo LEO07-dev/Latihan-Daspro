@@ -1,0 +1,23 @@
+judul : no 5
+Programer	: Azmi Jalaluddin Amron
+Modify	: ke 1 pada 21.19 14/11/2022
+
+kamus
+	n <-- integer
+	a <-- [1..7] array of integer
+
+deskripsi
+	output "Masukkan 7 buah nilai"
+	n=1
+	repeat
+	{
+		output "Masukkan angka ke-",n input a[n]
+		n <-- n + 1
+	}until(n<=7)
+	
+	output "Hasil dari angka yang anda masukkan adalah : "
+	n=1
+	repeat
+	{
+		output "Angka ke ", n, " adalah = ", a[n]
+	}until(n<=7)

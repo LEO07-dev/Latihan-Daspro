@@ -1,0 +1,19 @@
+judul
+latihan input
+programer	: azmi jalaluddin amron
+modify	:  18 sept 2022
+
+kamus
+nt, at, not, et <-- string (nt=nama teman, at=alamat teman, not=no hp teman, et=email teman) 
+
+deskripsi
+	input nt
+	input at 
+	input not
+	input et
+
+	output "Ow ternyata"
+	output "Beliau itu " nt " yang alamatnya " at
+	output "Beneran?"
+	output "Yang nomor HP nya " not
+	output "Aku sering diberi berita keren lewat email " et

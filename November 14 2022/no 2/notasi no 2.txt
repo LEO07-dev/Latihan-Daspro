@@ -1,0 +1,18 @@
+judul : no 2
+Programer : Azmi Jalaluddin Amron
+Modify	: ke 1 pada 7:27 14/11/2022
+
+kamus
+	A, Be, Ce <-- integer
+
+dekripsi
+	A = 1.9
+	Ce= 20
+	output "Be = " input Be
+	output "*) A x Be = ", AxBe
+	output "**) A + Ce X be = ", A+CexBe 
+	A = 20
+	Ce=1.9
+	output "***) ubah A = 20 dan Ce=1.9"
+	output "A = ", A
+	output 'Ce = ", Ce

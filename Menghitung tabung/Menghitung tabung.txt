@@ -1,0 +1,18 @@
+judul
+menghitung tabung
+Programer 	: Azmi Jalaluddin Amron
+Modify	: 24 September 2022
+
+kamus
+	a, b <-- integer (a=jari-jari, b=tinggi)
+	c, h <-- riil	(c=phi, h=hasil)
+
+deskripsi
+	output "Menghitung volume tabung"
+	output "Masukkan nilai jari-jari : "
+	input a
+	output "Masukkan nilai tinggi	: "
+	input b
+	c = 3,14
+	h = c × a² × b
+	output "Maka nilai volume adalah " h " cm³."

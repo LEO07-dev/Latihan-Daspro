@@ -1,0 +1,37 @@
+//Judul
+//Menghitung luas segitiga
+//Azmi Jalaluddin Amron
+
+#include <iostream>
+using namespace std;
+
+//Kamus
+  int Alas, Tinggi, Luas;
+
+//Diskripsi
+  int main ()
+    {
+      cout << "Menghitung luas segitiga" << endl;
+      cout << "Masukkan nilai alasnya";
+      cin >> Alas;
+
+      cout << "masukkan nilai tingginya";
+      cin >> Tinggi;
+
+      Luas = (Alas*Tinggi)/2;
+
+      cout << "Luasnya adalah = " << Luas << endl;
+
+      //segitiga siku-siku memiliki sudut 90°, 60°, dan 30° atau 90°, 45°, dan 45°
+      //" untuk setiap segitiga jika jumlah kuadrat panjang dua sisi yang saling tegak lurus sama dengan 
+          kuadrat panjang sisi miring maka segitiga tersebut merupakan segitiga siku-siku"
+ 
+      if (Luas^2 = Alas^2 + Tinggi^2)
+      {
+		output "Termasuk segitiga siku-siku"
+      }
+      else
+      {
+		output "Bukan segitiga siku-siku"
+      }
+    }

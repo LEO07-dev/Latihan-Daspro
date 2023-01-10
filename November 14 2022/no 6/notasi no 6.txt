@@ -1,0 +1,26 @@
+judul	: no 6
+Programer	: Azmi Jalaluddin Amron
+Modify		: ke 1 pada 8:00 14/11/2022
+
+
+kamus
+	A <-- riil 
+	B, C, CARI <-- integer
+
+deskripsi
+	output "A = " input A
+	output "B = " input B
+	output "C = " input C
+	output "Masukkan nilai yang kamu cari : " input CARI
+
+	if (A=CARI) then
+		output A " yang saya cari"
+	else if (B=CARI) then
+		output B " yang saya cari"
+	else if (C=CARI) then
+		output C " uang saya cari"
+	else
+		output A
+		output B
+		output C
+		output "Tidak ditemukan apa yang saya cari"

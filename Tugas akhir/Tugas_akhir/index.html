@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Azmi Jalaluddin Amron">
+    <meta name="keyword" content="HTML, CSS">
+    <meta name="description" content="Bahasa Pemrograman C++">
+    <title>AAM IT</title>
+    <link rel="icon" sizes="128" href="assets/image/icon/icon_for_blog4.png">
+    <style>
+        /* Scroll bar start style */
+        /* membuat container atau wadah dari scrollbar dengan lebar 20px  */
+        ::-webkit-scrollbar {
+        width: 20px;
+        }
+
+        /* membuat background dari scrollbar */
+        /* kasih warna transparan agar lebih estetik  */
+        ::-webkit-scrollbar-track {
+        background-color: transparent;
+        }
+
+    
+        /* membuat styling pada batang atau bar scrollbar  */
+        /* kita beri warna abu tua dengan lengkungan di sisi atas dan bawahnya  */
+        ::-webkit-scrollbar-thumb {
+        background-color: #d6dee1;
+        border-radius: 20px;
+        border: 6px solid transparent;
+        background-clip: content-box;
+        }
+
+        /* warna akan berubah menjadi abu mudah saat kursor diarahkan  */
+        ::-webkit-scrollbar-thumb:hover {
+        background-color: #a8bbbf;
+        }
+        /* Scroll bar end style */
+
+        /* Start CSS body */
+        body{
+            border: 1px solid #dc143c;
+        }
+        /* End CSS body */
+
+        /* Start CSS Header */
+        header#judul_blog{
+            text-align: center;
+            background-image: linear-gradient(25deg, red, green, blue);
+            height: 50px;
+        }
+        
+        header h1.title{
+            width: max-content;
+            text-align: center;
+            text-decoration-color: #ff5330;
+            color: #FFF;
+            padding: 10px 200px;
+            margin: 0;
+            text-shadow: 1px 1px 2px green, 0 0 25px yellow, 0 0 5px darkred;
+            letter-spacing: 23px;
+            word-spacing: 40px;
+        }
+        /* End CSS Header */
+
+        /* Start CSS Navbar */
+        #menu{
+            /* Background used color Chartreuse */
+            background: #7FFF00;
+            color: #eee;
+            height: 35px;
+            border-bottom: 4px solid #7fe619;
+        }
+        
+        #menu ul, 
+        #menu li, #menu ol{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            z-index: 9999;
+        }
+
+        #menu ul, #menu ol{
+            height: 35px;
+        }
+
+        #menu li{
+            float: left;
+            display: inline;
+            position: relative;
+            font: bold 12px Helvetica;
+            /* color is yellow 25% Gelap */
+            text-shadow: 2px 3px 6px #cccc00;
+            /* color is Krimson */
+            border-right: 1px solid #dc143c;
+            /* color is blue */
+            border-left: 1px solid #0000ff;
+            text-transform: uppercase;
+        }
+
+        #menu li:first-child{
+            border-left: none;
+        }
+
+        #menu a{
+            display: block;
+            line-height: 35px;
+            padding: 0 14px;
+            text-decoration: none;
+            /* color is Tomato 25% saturasi */
+            color: #ff5330;
+        }
+
+        #menu li:hover a,
+        #menu li a:hover{
+            /* color is Lime 25% Gelap */
+            background: #00cc00;
+            transition: opacity 2s;
+            opacity: 2;
+        }
+
+        #menu input{
+            display: none;
+            margin: 0;
+            padding: 0;
+            width: 80px;
+            height: 35px;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        #menu label{
+            font: bold 30px CourierNew;
+            display: none;
+            width: 35px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+        }
+
+        #menu label span{
+            font-size: 12px;
+            position: absolute;
+            left: 35px;
+        }
+
+        #menu ol.menus{
+            height: auto;
+            overflow: hidden;
+            width: 180px;
+            /* color is Green 25% Desaturasi */
+            background: #19e619;
+            opacity: 0.6;
+            position: absolute;
+            z-index: 99;
+            display: none;
+            border: 0;
+        }
+
+        #menu ol.menus li{
+            display: block;
+            width: 100%;
+            font: 12px Copperplate;
+            text-transform: none;
+        }
+
+        #menu ol.menus:hover{
+            transition: 4s;
+            opacity: 0.8;
+        }
+
+        #menu ol.menus li:hover{
+            transform: transform 6s;
+            transform: scale3d(1,1,3);
+            border: 3px solid #dc143c;
+        }
+
+        #menu li:hover ol.menus{
+            display: block;
+        }
+
+        #menu a.home{
+            /* color is Lime 25% Desaturasi */
+            background: #19e619;
+        }
+
+        #menu a.sub{
+            padding: 0 27px 0 14px;
+        }
+
+        #menu a.sub::after{
+            content: normal;
+            width: 0;
+            height: 0;
+            border-width: 6px 5px;
+            border-style: solid;
+            border-color: #eee transparent;
+            position: absolute;
+            top: 15px;
+            right: 9px;
+        }
+
+        #menu ol.menus a:hover{
+            /* color is Yellow 25% Terang */
+            background: #ffff40;
+            transform: scale(1.21);
+        }
+        /* End CSS Navbar */
+
+        /* Start CSS Section */
+        section{
+            margin: 100px 200px;
+            padding: 30px;
+            background-image: linear-gradient(32deg, orange, yellow, pink);
+        }
+
+        section h4.title2{
+            text-align: center;
+            font-size: x-large;
+            font-family: serif;
+            background: -webkit-linear-gradient(to right, rgb(165, 254, 167), rgb(229, 248, 124));
+            background: linear-gradient(to right, rgb(165, 254, 167), rgb(229, 248, 124));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 1px 1px 2px white, 0 0 25px #ceffbc, 0 0 5px blue;
+            text-decoration: underline;
+        }
+
+        section p.paragraf{
+            text-align: justify;
+            text-align-last: center;
+        }
+        /* End CSS Section */
+
+        /* Start CSS Article */
+        article{
+            float: left;
+            border: 2px solid #7fe619;
+        }
+        /* End CSS Article */
+
+        /* Start CSS Aside */
+        aside{
+            float: right;
+            border: 2px solid #e3ff00;
+        }
+
+        aside img{
+            width: 180px;
+            height: 280px;
+            margin: 0 25px;
+        }
+
+        aside header.profil h4{
+            text-align: center;
+        }
+        /* End CSS Aside */
+    </style>
+</head>
+<body>
+    <!-- Header start -->
+    <header name="header blog" id="judul_blog">
+        <h1 class="title">Welcome to AAM IT</h1>
+    </header>
+    <!-- Header end -->
+
+    <!-- Navbar start -->
+    <nav id="menu">
+        <input type="checkbox" name="" id="">
+        <label for="">=Navigation</label>
+        <ul>
+            <li>
+                <a class="home" href="#">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    About
+                </a>
+            </li>
+            <!-- Start dropdown menu area -->
+            <li>
+                <a class="sub" href="#">
+                    Seputar Pembahasan
+                </a>
+                <ol class="menus" type="I">
+                    <li>
+                        <a href="#" title="Menus">
+                            Algoritma
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Programing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Data & Type Data
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Variable
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Sequence
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contional
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Loop
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Array
+                        </a>
+                    </li>
+                </ol>
+            </li>
+            <!-- Finished dropdown area -->
+        </ul>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Section Start -->
+    <section>
+        <!-- Start Greeeting -->
+        <header name="header greeting" id="judul_greeting">
+            <h4 class="title2">
+                Salam sapa dari Penulis
+            </h4>
+            <p class="paragraf">
+                Salam buat kalian yang sedang membaca blog saya, saya harap kalian menikmati membaca blog saya. Dalam blog ini saya akan menjelaskan beberapa tentang bahasa pemrograman C++ yang saya ketahui. Karena ini merupakan pertama kalinya saya membuat blog saya minta maaf apa bila masih ada kekurangan. Selamat Membaca readers.
+            </p>
+        </header>
+        <!-- End Greeting -->
+    </section>
+    <!-- Section end -->
+
+    <!-- Article start -->
+    <article>
+        <!-- Seputar Algoritma -->
+        <div class="algoritma">
+
+        </div>
+
+        <!-- Seputar Programing -->
+        <div class="programing">
+
+        </div>
+
+        <!--  -->
+    </article>
+    <!-- Article end -->
+
+    <!-- Aside start -->
+    <aside>
+        <div>
+            <header class="profil">
+                <h4>Author</h4>
+                <img src="assets/image/Profil/profil.jpg" alt="author_picture.jpg" align="center">
+            </header>
+            <table>
+                <tr>
+                    <td>
+                        Nama :
+                    </td>
+                    <td>
+                        Azmi Jalaluddin Amron
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nama :
+                    </td>
+                    <td>
+                        Azmi Jalaluddin Amron
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </aside>
+    <!-- Aside end -->
+
+    <!-- Footer start -->
+    <footer>
+
+    </footer>
+    <!-- Footer end -->
+</body>
+</html>

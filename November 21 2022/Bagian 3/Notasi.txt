@@ -1,0 +1,140 @@
+judul : array lanjutan
+Prgramer	: Azmi Jalaluddn Amron
+Modify	: ke 1 pada 21.06 23/11/2022
+
+kamus
+	ArrA : array [1..12] of integer
+	ArrB : array [1..12] of integer
+	ArrC : array [1..12] of integer
+	i <-- integer 
+
+deskripsi
+	//di coding indeks dimulai dengan angkan 0
+	//indeks_notasi-1
+	
+	//Bagian A
+	ArrA[1]=2
+	ArrA[2]=3
+	ArrA[3]=4
+	ArrA[4]=1
+	ArrA[5]=2
+	ArrA[6]=4
+	ArrA[7]=1
+	ArrA[8]=6
+	ArrA[9]=8
+	ArrA[10]=1
+	ArrA[11]=1
+	ArrA[12]=7
+
+	//Bagian B
+	ArrB[1]=4
+	ArrB[2]=4
+	ArrB[3]=9
+	ArrB[4]=1
+	ArrB[5]=8
+	ArrB[6]=2
+	ArrB[7]=1
+	ArrB[8]=1
+	ArrB[9]=1
+	ArrB[10]=5
+	ArrB[11]=1
+	ArrB[12]=3
+
+	//Bagian c
+	ArrC[1]=4
+	ArrC[2]=7
+	ArrC[3]=9
+	ArrC[4]=1
+	ArrC[5]=1
+	ArrC[6]=7
+	ArrC[7]=3
+	ArrC[8]=1
+	ArrC[9]=3
+	ArrC[10]=3
+	ArrC[11]=1
+	ArrC[12]=2	
+
+	output "Matriks!"
+	output "Berapa hasil dari D=(A+B)-(A+C)"
+	
+	output "MatA"
+	i=1 {Dalam coding i=0 karena indeks di coding dimulai dari 0}
+	while (i<12) do
+	{
+		if(i = 4 OR i = 8) then {Dalam coding = --> == dan N-1}
+		{
+			output ArrA[i] "\n" {endline}
+		}
+		else
+		{
+			output ArrA[i] 
+		}
+		i <-- i+1
+	}
+
+	output "MatB"
+	i=1 {Dalam coding i=0 karena indeks di coding dimulai dari 0}
+	while (i<12) do
+	{
+		if(i = 4 OR i = 8) then {Dalam coding = --> == dan N-1}
+		{
+			output ArrB[i] "\n {endline}
+		}
+		else
+		{
+			output ArrB[i] 
+		}
+		i <-- i+1
+	}
+
+	output "MatC"
+	i=1 {Dalam coding i=0 karena indeks di coding dimulai dari 0}
+	while (i<12) do
+	{
+		if(i = 4 OR i = 8) then {Dalam coding = --> == dan N-1}
+		{
+			output ArrC[i] "\n {endline}
+		}
+		else
+		{
+			output ArrC[i] 
+		}
+		i <-- i+1
+	}
+
+	output "Nilai dari D!"
+	output "Pertama cari (ArrA + ArrB)!"
+	{indeks i-1 dalam code}
+	//Rumus
+	output "A + B = 	|", ArrA[1], " + ", ArrB[1], "		", ArrA[2], " + ", ArrB[2], "		", ArrA[3], " + ", ArrB[3], "		", ArrA[4], " + ", ArrB[4], "|"
+ 	output "		|", ArrA[5], " + ", ArrB[5], "		", ArrA[6], " + ", ArrB[6], "		", ArrA[7], " + ", ArrB[7], "		", ArrA[8], " + ", ArrB[8], "|"
+	output "		|", ArrA[9], " + ", ArrB[9], "		", ArrA[10], " + ", ArrB[10], "		", ArrA[11], " + ", ArrB[11], "		", ArrA[12], " + ", ArrB[12], "|"
+	//Hasil
+	output "A + B = 	|", ArrA[1] + ArrB[1], "	", ArrA[2] + ArrB[2], "   ", ArrA[3] + ArrB[3], "   ", ArrA[4] + ArrB[4], "|"
+ 	output "		|", ArrA[5] + ArrB[5], "	", ArrA[6] + ArrB[6], "   ", ArrA[7] + ArrB[7], "   ", ArrA[8] + ArrB[8], "|"
+	output "		|", ArrA[9] + ArrB[9], "	", ArrA[10] + ArrB[10], "  ", ArrA[11] + ArrB[11], "   ", ArrA[12] + ArrB[12], "|"
+
+
+	output "Kedua cari (ArrA + ArrC)!"
+	{indeks i-1 dalam code}
+	//Rumus
+	output "A + C = 	|", ArrA[1], " + ", ArrC[1], "		", ArrC[2], " + ", ArrC[2], "		", ArrA[3], " + ", ArrC[3], "		", ArrA[4], " + ", ArrC[4], "|"
+ 	output "		|", ArrA[5], " + ", ArrC[5], "		", ArrC[6], " + ", ArrC[6], "		", ArrA[7], " + ", ArrC[7], "		", ArrA[8], " + ", ArrC[8], "|"
+	output "		|", ArrA[9], " + ", ArrC[9], "		", ArrC[10], " + ", ArrC[10], "		", ArrA[11], " + ", ArrC[11], "		", ArrA[12], " + ", ArrC[12], "|"
+	//Hasil
+	output "A + C = 	|", ArrA[1] + ArrC[1], "	", ArrA[2] + ArrC[2], "   ", ArrA[3] + ArrC[3], "   ", ArrA[4] + ArrC[4], "|"
+ 	output "		|", ArrA[5] + ArrC[5], "	", ArrA[6] + ArrC[6], "   ", ArrA[7] + ArrC[7], "   ", ArrA[8] + ArrC[8], "|"
+	output "		|", ArrA[9] + ArrC[9], "	", ArrA[10] + ArrC[10], "  ", ArrA[11] + ArrC[11], "   ", ArrA[12] + ArrC[12], "|"
+	
+
+	output "Ketiga cari nilai D!"
+	output "D = (A+B) - (A+C)!"
+	{indeks i-1 dalam code}
+	//Rumus
+	output "D = |", ArrA[1] + ArrB[1], " - ", ArrA[1] + ArrC[1], "		", ArrA[2] + ArrB[2], " - ", ArrA[2] + ArrC[2], "		", ArrA[3] + ArrB[3], " - ", ArrA[3] + ArrC[3], "		", ArrA[4] + ArrB[4], " - ", ArrA[4] + ArrC[4], "|"
+	output "    |", ArrA[5] + ArrB[5], " - ", ArrA[5] + ArrC[5], "		", ArrA[6] + ArrB[6], " - ", ArrA[6] + ArrC[6], "		", ArrA[7] + ArrB[7], " - ", ArrA[7] + ArrC[7], "		", ArrA[8] + ArrB[8], " - ", ArrA[8] + ArrC[8], "|"
+	output "    |", ArrA[9] + ArrB[9], " - ", ArrA[9] + ArrC[9], "		", ArrA[10] + ArrB[10], " - ", ArrA[10] + ArrC[10], "		", ArrA[11] + ArrB[11], " - ", ArrA[11] + ArrC[11], "		", ArrA[12] + ArrB[12], " - ", ArrA[4] + ArrC[4], "|"
+	//Hasil
+	output "D = |", (ArrA[1] + ArrB[1]) -  (ArrA[1] + ArrC[1]), "		", (ArrA[2] + ArrB[2]) - (ArrA[2] + ArrC[2]), "		", (ArrA[3] + ArrB[3]) - (ArrA[3] + ArrC[3]), "		", (ArrA[4] + ArrB[4]) - (ArrA[4] + ArrC[4]), "|"
+	output "    |", (ArrA[5] + ArrB[5]) - (ArrA[5] + ArrC[5]), "		", (ArrA[6] + ArrB[6]) - (ArrA[6] + ArrC[6]), "		", (ArrA[7] + ArrB[7]) - (ArrA[7] + ArrC[7]), "		", (ArrA[8] + ArrB[8]) - (ArrA[8] + ArrC[8]), "|"
+	output "    |", (ArrA[9] + ArrB[9]) - (ArrA[9] + ArrC[9]), "		", (ArrA[10] + ArrB[10]) - (ArrA[10] + ArrC[10]), "		", (ArrA[11] + ArrB[11]) - (ArrA[11] + ArrC[11]), "		", (ArrA[12] + ArrB[12]) - (ArrA[4] + ArrC[4]), "|"

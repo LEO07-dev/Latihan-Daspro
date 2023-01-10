@@ -1,0 +1,2 @@
+Saat membuat program ini menggunakan for, saya gagal.
+Jadi saya menggunakan while do.

@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(){
+  int a=3;
+  for(int b=1;b<=a;b++){
+   for(int c=1;c<=b;c++){
+   printf("*");
+   }
+   for(int d=3;d>=b;d--){
+    printf(" ");
+   }
+    for(int d=2;d>=b;d--){
+    printf(" ");
+   }
+    for(int c=1;c<=b;c++){
+    printf("*");
+   }
+  printf("n");
+  }
+ }

@@ -1,0 +1,48 @@
+judul
+membuat KTP
+Programer	: Azmi Jalaluddin Amron
+modify	: 19 sept 2022
+
+kamus 
+	NIK, Nama, TTL, JK, Alamat, Rt, Rw, Kel, Kec, Agama, SP, Pekerjaan, WN, BA, GD <-- string
+	(TTL = Tempat, Tanggal Lahir, JK = Jenis kelamin, SP = Status Perkawinan, WN = Kewarganegaraan, BA = Berlaku Hingga)	
+	(GD = Golongan Darah)	
+
+deskripsi
+	
+	output "Membuat Sistem Pembuatan KTP"
+	output "NIK					:" getline(input, NIK		)
+	output "Nama				:" getline(input, Nama		)
+	output "Tempat/ Tgl Lahir		:" getline(input, TTL		)
+	output "Jenis Kelamin 			:" getline(input, JK		)
+	output "Golongan Darah			:" getline(input, GD		)
+	output "Alamat 				:" getline(input, Alamat	)
+	output "Rt					:" getline(input, Rt		)
+	output "Rw					:" getline(input, Rw		)
+	output "Kelurahan				:" getline(input, Kel		)
+	output "Kecamatan				:" getline(input, Kec		)
+	output "Agama				:" getline(input, Agama		)
+	output "Status Perkawinan		:" getline(input, SP		)
+	output "Pekerjaan				:" getline(input, Pekerjaan	)
+	output "Kewarganegaraan			:" getline(input, WN		)
+	output "Berlaku Hingga			:" getline(input, BA		)
+
+
+	output "================================================================"
+	output "				PROVINSI JAWA TENGAH				"
+	output "				   KABUPATEN DEMAK				"
+	output "NIK				:", NIK
+	
+	output "Nama				:", Nama
+	output "Tempat/Tgl Lahir		:", TTL
+	output "Jenis Kelamin			:", JK   output "Gol. Darah  :", GD
+	output "Alamat				:", Alamat
+		output "RT/RW 			:", Rt, "/", Rw
+		output "Kel/Desa			:", Kel
+		output "Kecamatan 		:", Kec
+	output "Agama 				:", Agama
+	output "Status Perkawinan		:", SP
+	output "Pekerjaan 			:", Pekerjaan
+	output "Kewarganegaraan 		:", WN
+	output "Berlaku Hingga			:", BA
+	output "================================================================"

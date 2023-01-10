@@ -1,0 +1,21 @@
+Judul : Menentukan status atau nama prodi
+Programer	: Azmi Jalaluddin Amron
+Modify	: ke 1 pada 13.10 02/11/2022
+
+Kamus
+	NIM : array [1..20] of char
+
+Deskripsi
+	input NIM
+	depend on (NIM[1,2,3])
+		A11	: output "Teknik Informatika S1"
+		A12	: output "Sistem Informasi S1"
+		A14	: output "DKV S1"
+		A15	: output "Ilmu Komunikasi S1"
+		A22	: output "Teknik Informatika D3"
+		A23	: output "Diploma Film & TV"
+		A24	: output "Penyiaran D3"
+	
+		
+	
+		

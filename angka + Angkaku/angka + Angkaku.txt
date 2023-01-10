@@ -1,0 +1,21 @@
+judul
+penjumlahan latihan input
+Programer	: Azmi Jalaluddin Amron
+Modify	: 13 sept 2022
+
+kamus
+	angka, Angkaku, hasil <-- integer
+	
+
+diskripsi
+	output "Latihan input"
+	output "Masukkan nilai pertama	=" input angka
+	output "Masukkan nilai kedua		=" input Angkaku
+
+	hasil = angka + Angkaku
+	output "hasil dari", angka" dan", Angkaku "adalah =" hasil
+
+	if (hasil>100) than
+		output "Melampaui hasil"
+	else
+		output "Kurang"

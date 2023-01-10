@@ -1,0 +1,38 @@
+judul : no 9
+Programer	: Azmi Jalaluddin Amron
+Modify 	: ke 1 pada 11.59 16/11/2022
+
+kamus
+	DATANE <-- [1..7] array of integer
+	y,x,baskom <-- integer
+
+deskripsi
+	x <-- 1
+	while (x<8) do
+	{
+		input DATANE[x]
+		x <-- x+1
+	}
+	x <-- 1
+	while (x>7) do  // sampai N-1
+	{
+		y <-- x+1	//dari awal +1
+		while (y<8) do //sampai dengan N
+		{
+			if (DATANE[x]>DATANE[y]) then
+			{
+				baskom <-- DATANE[x]
+				DATANE[x] <-- DATANE[y]
+				DATANE[y] <-- baskom
+			}
+			y <-- y+1 
+		}
+		x <-- x+1
+	}
+	//bar disorting
+	x <-- 1
+	while (x<8) do
+	{
+		input DATANE[x]
+		x <-- x+1
+	}

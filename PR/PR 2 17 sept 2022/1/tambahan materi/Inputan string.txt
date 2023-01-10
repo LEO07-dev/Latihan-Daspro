@@ -1,0 +1,12 @@
+Judul : inputan string
+Kamus : 
+roti  string
+biscuit  character
+Diskripsi :
+Output “masukan Namamu : “
+Input roti
+Output “owww kamu si " << roti << " thoo, pie kabare ?? "
+Output “jenis kelaminmu [ L / P ] ? ”
+Input biscuit
+Output “ok jenis kelaminmu " << biscuit
+Input asmane

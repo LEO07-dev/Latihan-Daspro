@@ -1,0 +1,23 @@
+judul
+simulasi depend on
+Programer	: AZMI JALALUDDIN AMRON
+Modify		: 26 September 2022
+
+kamus
+
+	kodeFak <-- char
+
+deskripsi
+
+	input kodeFak
+	
+	depend on (kodeFak)
+		kodeFak = 'A' : output "fasilkom"
+		kodeFak = 'B' : output "feb"
+		kodeFak = 'C' : output "fib"
+		kodeFak = 'D' : output "fkes"
+		kodeFak = 'E' : output "fT""
+
+		other : cout "Tidak ada"
+
+=====================================================		

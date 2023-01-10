@@ -1,0 +1,23 @@
+judul : no 4
+Programer	: Azmi Jalaluddin Amron
+Modify		: ke 1 pada 7:36 14/11/2022
+
+kamus
+	A, Be, Ce <-- integer
+
+deskripsi
+	output "A= " input A
+	output "Be= " input Be
+	output "Ce= " input Ce
+	output "Mana yang lebih besar ?"
+	if (A!=Be AND Be!=Ce AND A!=Ce) then
+		if (A>Be>Ce OR A>Ce>Be) then
+			output "A paling besar"
+		else
+			if (Be>A>Ce OR Be>Ce>A) then
+				output "Be paling besar"
+			else
+				if (Ce>A>Be Or Ce>Be>A) then
+					output "Ce paling besar"
+		
+			

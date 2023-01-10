@@ -1,0 +1,22 @@
+judul
+Membuat program untuk mengetahui genap ganjil dari penjumlahan
+Programer	: Azmi Jalaluddin Amron
+Modify	: 28 September 2022
+
+kamus
+	
+	bil1, bil2 <-- integer
+	hasil <-- riil
+
+deskripsi
+	 
+	output "Menenentukan Genap Ganjil dari penjumlahan"
+	output "Masukkan nilai pertama : ", input bil1
+	output "Masukkan nilai kedua	 : ", input bil2
+	hasil = bil1 + bil2
+	output "Hasilnya adalah ", hasil
+	
+	if (hasildiv2=0) then
+		output "genap"
+	else
+		output "ganjil"

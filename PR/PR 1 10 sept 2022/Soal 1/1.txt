@@ -1,0 +1,33 @@
+1. 	Terdapat 2 buah nilai, bias berupa bulat bisa juga berupa nilai decimal atau pecahan. 
+	2 nilai tersebut merepresentasikan sebagaii alas dan tinggi, 
+	Bantulah kami agar dapat memudahkan kami untuk mengetahui sebuah benda datar 
+	tersebut (segi tiga), merupakan segitiga siku siku atau tidak
+
+
+//Judul
+//Menentukan segitiga siku-siku
+//Azmi Jalaluddin Amron
+
+#include <iostream>
+using namespace std;
+
+//Kamus
+  int As,Ti, hasil;  //As = Alas, TI = TInggi, dan hasil = Luas
+  
+
+//Diskripsi
+  int main()
+     {
+	  cout << "Menghitung segitiga siku-siku" << endl;
+        cout << "Masukkan nilai alasnya";
+        cin >> As;
+
+        cout << "Masukkan nilai tingginya";
+        cin >> Ti;
+
+        hasil = Ai × Ti ÷ 2
+	  cout << "Luasnya adalah =" << hasil;
+
+        return 0;
+     }
+

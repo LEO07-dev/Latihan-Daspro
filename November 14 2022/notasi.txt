@@ -1,0 +1,32 @@
+warming up & streatching
+--- noati & coding ---
+--- tyiping skill ------
+---- SKALI LAGI
+---- NOTASI DULU YA BOOSS----
+
+1.	HELLO SEMARANG
+	APAKABAR HARI INI
+
+2.	A = 1.9	  B = input  C = 20
+	*)	A * B= ?
+	**)	A + C * B =
+	***)	rubah A --> 20  C --> 1.9
+
+3.	pada nomor 1, Assigment kan ke helo dan kabar (string)
+	helo = "HELLO SEMARANG"
+	kabar = "APAKABAR HARI INI"
+	outputkan hello dan kabar
+
+4.	pada nomor 2, A B C di input
+	mana yang lebih besar?
+
+5. 	ada bilangan sebanyak N, (integer)
+	masukkan bilangan sebanyak N tersebut
+	gunakan repeat until
+
+6.	merujuk nomor 2 dan 3, carilah data yang kalian mau cari (var= cari)
+
+7.	cermati A Be Ce dan N bilangan,
+	maka terbentuklah Array
+
+8.

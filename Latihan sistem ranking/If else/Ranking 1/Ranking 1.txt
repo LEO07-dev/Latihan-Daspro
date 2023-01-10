@@ -1,0 +1,23 @@
+judul
+Membuat program ranking 1
+Programer	: Azmi Jalaluddin Amron
+Modify	: 29 September 2022
+
+	A≠B, B≠C, C≠A //Jadi 3 nilai tersebut itu gak boleh sama nilainya
+
+kamus
+	A, B, C <-- integer
+
+deskripsi
+	output "Mari mengurutkan dari nilai terbesar ke nilai terkecil"
+	output "Masukkan 3 nilai perbandingan"
+	output "Masukkan nilai pertama : ", input A
+	output "Masukkan nilai kedua	 : ", input B
+	output "Masukkan nilai ketiga  : ", input C
+	depend on (A,B,C)
+		A < B < C : output (A, B, C) //A lebih besar dari B dan B lebih besar dari C
+		A < C < B : output (A, C, B) //A lebih besar dari B dan B lebih kecil dari C dan C lebih kecil dari A
+		B < A < C : output (B, A, C) //A lebih kecil dari B dan B lebih besar dari C dan C lebih kecil dari A
+		B < C < A : output (B, C, A) //A lebih kecil dari B dan B lebih besar dari C dan C lebih besar dari A
+		C < A < B : output (C, A, B) //A lebih besar dari B dan B lebih kecil dari C dan C lebih besar dari A
+		C < B < A : output (C, B, A) //A lebih kecil dari B dan B lebih kecil dari C 

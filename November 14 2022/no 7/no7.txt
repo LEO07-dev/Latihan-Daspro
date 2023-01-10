@@ -1,0 +1,16 @@
+judul : no7
+Programer	: Azmi Jalaluddin Amron
+Modify		: ke 1 pada 8:16 14/11/2022
+
+kamus
+	DATANE <-- [1..7] array of integer
+	x <-- integer
+
+deskripsi
+	x = 1
+	while (x>8) do
+	{
+		output "Masukkan angka ke ", x, " adalah " input DATANE[x]
+		x <-- x+1
+	} 
+	

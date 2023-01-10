@@ -1,0 +1,28 @@
+judul
+menghitung lama belajar
+progamer	: Azmi Jalaluddin Amron
+modify	: 13 sept 2022
+
+kamus
+	JHH1, JMM1, JSS1 <-- integer
+	JHH2, JMM2, JSS2 <-- integer
+	hasil1, hasil2, hasil3 <-- integer
+	
+
+diskripsi
+	output "Menghitung lamanya belajar"
+	JHH1 = 8
+	JMM1 = 10
+	JSS1 = 30
+	output " Jam mulainya belajar = " JHH1 : JMM1 : JSS1
+	JHH2 = 10
+	JMM2 = 30
+	JSS2	= 50
+	output " Jam selesainya belajar = " JHH2 : JMM2 : JSS2
+
+	hasil1 = JHH2 - JHH1
+	hasil2 = JMM2 - JMM1
+	hasil3 = JSS2 - JSS1
+	output "Lamanya belajar adalah = " << hasil1 << "jam" << hasil2 << "menit" << hasil3 << "detik"
+
+	output "Semangat belajar"

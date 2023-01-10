@@ -1,0 +1,26 @@
+judul
+Membuat Program ranking
+Programer	: Azmi Jalaluddin Amron
+Modify	: 18.14 30/09/2022
+
+kamus
+	A, B, C <-- integer
+
+deskripsi
+	output "Mari menghitung urutan ranking"
+	output "Masukkan 3 nilai berbeda sebagai perbandingan"
+	output "Masukkan nilai pertama : ", input A
+	output "Masukkan nilai kedua	 : ", input B
+	output "Masukkan nilai ketiga  : ", input C
+	if (A ≠ B and B ≠ C and C ≠ A)
+		depend on (A, B, C)	
+		  A < B < C		: output (A, B, C)
+		  A < C < B		: output (A, C, B)
+		  B < A < C		: output (B, A, C)
+		  B < C < A		: output (B, C, A)
+		  C < A < B		: output (C, A, B)
+		  C < B < A		: output (C, B, A)
+	else { ada data yang sama : A=B or B=C or A=C }
+	   output ("Data salah, tidak sesusai spesifikasi")
+	
+		

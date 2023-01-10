@@ -1,0 +1,67 @@
+judul	: tampilkan 1-40
+{berapa total jumlah bilangan 1-40? Tampilkan angka yang habis dibagi 4 ada berapa bilangan angka yang habis dibagi 4 dari 1-40}
+Programer	: Azmi Jalaluddin Amron
+Modify		: ke 1 pada 7:21 07/11/2022
+
+kamus
+	a, h, b, i, k <-- integer
+	j, y <-- integer
+
+	//variabel untuk array
+	c : array[1..40] of integer
+	p, q <-- integer
+	
+
+deskripsi
+	a=1
+	h=0
+	output "dengan variabel biasa"
+	while (a<=40) do
+		output a, " "
+		a=a+1
+		h=h+a
+	output "Jumlah bilangan 1-40 adalah " h
+	
+	b=1
+	i=0
+	k=0	
+	while (b<=40) do
+		if (b mod 4 = 0) then
+			output b, " "
+			i=i+b
+			k=k+1
+		b=b+1
+	output "Jumlah bilangan 1-40 yang habis dibagi 4 adalah " i
+	output "Banyak bilangan 1-40 yang habis dibagi 4 adalah " k
+
+	a=1
+	j=0
+	y=0
+	while (a<=40) do
+		if (a mod 4 = 0) then
+			output a, " "
+			j=j+a
+			y=y+1
+		a=a+1
+	output "Jumlah bilangan 1-40 yang habis dibagi 4 adalah " j
+	output "Banyak bilangan 1-40 yang habis dibagi 4 adalah " y	 
+
+
+	//dengan array
+	p=1
+	c[p]=1
+	q=0
+	output "dengan array"
+	while (c[p]<=40) do
+		output c[p], " "
+		q=q+c[p]
+		p=p+1
+		c[p]=c[p-1]+1
+	output "Jumlah bilangan 1-40 adalah " q
+
+	//dari 40 ke 1 dengan array
+	output "dari 40 ke 1 dengan array
+	while (c[p-1]>=1) do
+		output c[p-1], " "
+		p=p-1	
+		

@@ -1,0 +1,33 @@
+judul : Membuat Program Ranking dari besar ke kecil
+Programer 	: Azmi Jalaluddin Amron
+Modify	: ke 1 pada 5 Oktober 2022
+
+kamus
+	a, b, c <-- integer
+	choice <-- char
+
+deskripsi
+	output "Masukkan nilai bilangan di bawah ini!"
+	output "Mau mencoba?"
+	input choice
+	
+
+	while(choice=Y OR choice=y) do //karena tidak ada nya batasan jadi selama kamu jawab Y atau y akan mengulang terus
+	output "Masukkan nilai bilangan a	: " input a
+	output "Masukkan nilai bilangan b	: " input b
+	output "Masukkan nilai bilangan c	: " input c
+
+	if (a>b AND b>c)
+		output "(", a, ", ", b, ", ", c, ")"
+	else if (a>b AND b<c AND c<a)
+		output "(", a, ", ", c, ", ", b, ")"
+	else if (a<b AND b>c AND c<a)
+		output "(", b, ", ", a, ", ", c, ")"
+	else if (a<b AND b>c AND c>a)
+		output "(", b, ", ", c, ", ", a, ")"
+	else if (a>b AND b<c AND c>a)
+		output "(", c, ", ", a, ", ", b, ")"
+	else if (a<b AND b<c)
+		output "(", b, ", ", c, ", ", a, ")"
+
+	

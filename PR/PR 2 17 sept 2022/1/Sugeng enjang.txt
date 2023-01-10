@@ -1,0 +1,12 @@
+judul
+tampilan sapaan 
+programer	: azmi jalaluddin amron
+modify	: 18 sept 2022
+
+kamus
+-
+
+deskripsi
+	output "selamat pagi"
+	output "sugeng enjang"
+	output "don’t forget gratefully"

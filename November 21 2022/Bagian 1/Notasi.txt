@@ -1,0 +1,117 @@
+judul : array lanjutan
+Programer	: Azmi Jalaluddin Amron
+Modify	: ke 1 pada 06.39 21/11/2022
+{17, 18, 17, 34, 46, 22, 17, 18, 35, 34, 17,18
+
+kamus
+	age : array [12] of integer
+	i, x, y, baskom, terbesar, terkecil, many1, many2 <-- integer
+	average <-- riil
+
+deskripsi
+	output "Umur"
+	//bagian input umur
+	i=1 {kalau di code i=0}
+	while (i<12) do
+	{ 
+		output "Masukkan usia ke-", i, " :"
+		input age
+		i <-- i+1
+	}
+
+	//rata-rata
+	i <-- 1 {kalau di code i=0}
+	average <-- 0
+	while (i<12) do
+	{
+		average <-- average+age[i]
+		i <-- i+1
+	}
+	output "Rata-ratanya adalah = ", average÷i
+
+	//sebelum disorting
+	x <-- 1 {Kalau di code x=0}
+	while (x<12) do
+	{
+		output age[x], " "
+		x <-- x+1
+	}
+	
+	//bagian sorting
+	x <--  1 {Kalau di code x=0}
+	while (x<11) do //N-1
+	{
+		y <-- x+1
+		while (age[x]>age[y]) do
+		{
+			if (age[x]>age[y]) then
+			{
+				baskom = age[x]
+				age[x] = age[y]
+				age[y] = baskom
+			}
+			y <-- y+1
+		}
+		x <-- x+1
+	}
+
+	//tampilan setelah disorting
+	x <-- 1 {Kalau di code x=0}
+	while (x>12) do
+	{
+		output age[x], " "
+		x <-- x+1
+	}
+
+	//berapa banyak data terbesarnya
+	i <-- 1
+	terbesar <-- age[1] {Kalau di code index ke 0}
+	repeat
+	{
+		if (age[i]>terbesar) then
+		{
+			terbesar <-- age[i]
+		}
+		i <-- i+1
+
+	}until (i<12)
+	i=1
+	many1 = 0
+	while (i<11) do {kalau di code i>0 karena nilai awal indeks di komputer adalah 0}
+	{
+		if (age[i]=terbesar) then
+		{
+			many1 <-- many1+1
+		}
+		i <-- i+1
+	}
+	output "Bilangan terbesar bernilai ", terbesar
+	output "Banyak data terbesar adalah = ", many1
+
+	//berapa banyak data terkecilnya
+	i <-- 1 {Kalau di code i=0}
+	terbesar <-- age[1]
+	repeat
+	{
+		if (age[i]<terkecil) then
+		{
+			terkecil <-- age[i]
+		}
+		i <-- i+1
+
+	}until (i<12)
+	i=1 {Ditulis di code i=0}
+	many2 = 0
+	while (i<11) do {kalau dicode i>0 karena nilai awal indeks di komputer adalah 0}
+	{
+		if (age[i]=terkecil) then
+		{
+			many2 <-- many2+1
+		}
+		i <-- i+1
+	}
+	output "Bilangan terkecil bernilai ", terkecil
+	output "Banyak data terkecil adalah = ", many2
+	
+	
+	

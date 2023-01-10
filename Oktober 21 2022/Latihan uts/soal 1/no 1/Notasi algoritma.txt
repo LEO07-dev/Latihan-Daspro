@@ -1,0 +1,134 @@
+judul 
+Membuat program jam dengan 2 format 
+Programer	: Azmi Jalaluddin Amron
+Modify 	: ke 1 pada 08.03 23/10/2022
+
+kamus 
+	choice <-- integer
+	HH1, MM1, SS1 <-- integer
+	HH2, MM2, SS2 <-- integer
+	H1, M1, S1 <-- integer
+	J1, J2 <-- integer
+	WL, WR <-- string
+
+deskripsi 
+	output "Menghitung durasi waktu!"
+	output "Silakan pilih format yang diinginkan"
+	output "a. Format 24 jam,"
+	output "b. Format am dan pm."
+	output "Silakan masukkan pilihan anda (a/b) : " input choice
+		depend on (choice)
+			a : output "Anda memilih format am dan pm."
+				Jam_awal :
+			    output "Silakan masukkan nilai jam awal : " input HH1 
+			    output "Masukkan format (am/pm) : " input waktu
+				if (HH1>11) then
+					output "Batas Pengisian adalah 0-11"
+					goto Jam_awal
+				Menit_awal :
+			    output "Silakan masukkan nilai menit awal : " input MM1
+				if (MM1>59) then
+					output "Batas Pengisian adalah 0-59"
+					goto Menit_awal
+				Detik_awal :
+			    output "Silakan masukkan nilai detik awal : " input SS1
+				if (SS1>59) then
+					output "Batas Pengisian adalah 0-59"
+					goto Detik_awal
+				Format_awal :
+			    output "Masukkan format waktu awal mula : " input WA
+				if (WA≠am OR WA≠pm) then
+					output "Masukkan fomat hanya ada (am/pm)"
+					goto Format_awal
+				Jam_akhir :
+			    output "Silakan masukkan nilai jam akhir : " input HH2
+				if (HH2>12) then
+					output "Batas Pengisian adalah 0-12"
+					goto Jam_akhir
+				Menit_akhir :
+			    output "Silakan masukkan nilai menit akhir : " input MM2
+				if (MM2>59) then
+					output "Batas Pengisian adalah 0-59"
+					goto Menit_akhir
+				Detik_akhir :
+			    output "Silakan masukkan nilai detik akhir : " input SS2
+				if (SS2>59) then
+					output "Batas Pengisian adalah 0-59"
+					goto Detik_akhir
+				Format_akhir :
+			    output "Masukkan format waktu selesai : " input WR
+				if (WR≠am OR WR≠pm) then
+					output "Masukkan fomat hanya ada (am/pm)"
+					goto Format_akhir
+			    output "Anda mulai pada jam ", HH1, " : ", MM1, " : ", SS1 
+			    output "Anda selesai pada jam ", HH2, " : ", MM2, " : ", SS2
+				if (WA=pm) then
+					HH1=HH1+12
+				else if (WA=am) then
+					HH1=HH1
+				else if (WR=pm) then
+					HH2=HH2+12
+				else if (WR=am) then
+					HH2=HH2
+			    		
+			    if (HH1>HH2) then
+				HH2=HH2+24
+			    else then
+				HH2=HH2
+
+			    J1=(HH1×3600)+(MM1×60)+SS1
+			    J2=(HH2×3600)+(MM2×60)+SS2
+			    H1=(J2-J1)÷3600
+			    M1=(J2-J1)mod3600)div60
+			    S1=(J2-J1)mod3600)mod60
+			    output "Maka lama belajar anda adalah ", H1, " jam, ", M1, " menit, ", S1, " detik."
+
+			b : output "Anda memilih format 24 jam."
+				Jam_awal :
+			    output "Silakan masukkan nilai jam awal : " input HH1
+				if (HH1>23) then
+					output "Batas Pengisian adalah 0-23"
+					goto Jam_awal
+				Menit_awal :
+			    output "Silakan masukkan nilai menit awal : " input MM1
+				if (MM1>59) then
+					output "Batas Pengisian adalah 0-59"
+					goto Menit_awal
+				Detik_awal :
+			    output "Silakan masukkan nilai detik awal : " input SS1
+				if (SS1>59) then
+					output "Batas Pengisian adalah 0-59"
+					goto Detik_awal
+				Jam_akhir :
+			    output "Silakan masukkan nilai jam akhir : " input HH2
+				if (HH2>23) then
+					output "Batas Pengisian adalah 0-23"
+					goto Jam_akhir
+				Menit_akhir :
+			    output "Silakan masukkan nilai menit akhir : " input MM2
+				if (MM2>59) then
+					output "Batas Pengisian adalah 0-59"
+					goto Menit_akhir
+				Detik_akhir :
+			    output "Silakan masukkan nilai detik akhir : " input SS2
+				if (SS2>59) then
+					output "Batas Pengisian adalah 0-59"
+					goto Detik_akhir
+			    output "Anda mulai pada jam ", HH1, " : ", MM1, " : ", SS1
+			    output "Anda selesai pada jam ", HH2, " : ", MM2, " : ", SS2
+			    
+			    if (HH1>HH2) then
+				HH2=HH2+24
+			    else then
+				HH2=HH2
+
+			    J1=(HH1×3600)+(MM1×60)+SS1
+			    J2=(HH2×3600)+(MM2×60)+SS2
+			    H1=(J2-J1)÷3600
+			    M1=(J2-J1)mod3600)div60
+			    S1=(J2-J1)mod3600)mod60
+			    output "Maka lama belajar anda adalah ", H1, " jam, ", M1, " menit, ", S1, " detik."
+			    
+			    
+			    
+			    

@@ -1,0 +1,35 @@
+judul
+Menghitung luas lingkaran
+programer	: Azmi Jalaluddin Amron
+modify	: 12 Sept 2022
+
+kamus
+	jari21 <-- integer
+	jari22 <-- riil
+      Luas1, Luas2, Luas3 <-- riil
+
+diskripsi
+
+      output "Menghitung luas lingkaran ke 1"
+ 	jari21 = 28
+	output "Jari-jari lingkaran ke 1 =" jari21
+	
+      Luas1 = 3,14 * jari21 * jari21
+	output "Maka luas lingkaran ke 1 = " Luas1
+
+      output "Menghitung luas lingkaran ke 2"
+	jari22 = 13,5
+
+	luas2 = 3,14 * jari22 * jari22
+	output "Maka luas lingkaran ke 2 = " Luas2
+
+	Luas3 = Luas1-Luas2
+	output "Maka luas donat bolong adalah = " Luas3
+
+	if (Luas1>luas2) then
+		output "Jari-jari lingkaran satu lebih besar dari lingkaran dua"
+	else
+		output "Jari-jari lingkaran dua lebih besar dari lingkara satu"
+
+
+     

@@ -1,0 +1,49 @@
+//judul
+//Rata-rata
+//Programer	: Azmi Jalaluddin Amron
+//Modify	: 12 Sept 2022
+
+//kamus
+	bil1, bil2, bil3, bil4, bil5, bil6, bil7, bil8, bil9, bil10 <-- integer
+	hasil <-- riil
+
+//diskripsi
+
+		output "Menghitung nilai rata-rata dari 10 nilai!"
+		output "Masukkan nilai bilangan ke 1 =" 
+		bil 1 = 90
+		input bil1
+		output "Masukkan nilai bilangan ke 2 =" 
+		bil 2 = 92
+		input bil2
+		output "Masukkan nilai bilangan ke 3 =" 
+		bil 3 = 94
+		input bil3
+		output "Masukkan nilai bilangan ke 4 =" 
+		bil 4 = 96
+		input bil4
+		output "Masukkan nilai bilangan ke 5 =" 
+		bil 5 = 95
+		input bil5
+		output "Masukkan nilai bilangan ke 6 =" 
+		bil 6 = 98
+		input bil6
+		output "Masukkan nilai bilangan ke 7 =" 
+		bil 7 = 97
+		input bil7
+		output "Masukkan nilai bilangan ke 8 =" 
+		bil 8 = 99
+		input bil8
+		output "Masukkan nilai bilangan ke 9 =" 
+		bil 9 = 89
+		input bil9
+		output "Masukkan nilai bilangan ke 10 =" 
+		bil 10 = 100
+		input bil10
+
+            hasil = (bil1 + bil2 + bil3 + bil4 + bil5 + bil6 + bil7 + bil8 + bil9 + bil10)/2
+            output "Nilai rata-rata adalah " hasil
+
+		if hasil>90 then pertahankan nilaimu
+		else tingkatkan usahamu
+		

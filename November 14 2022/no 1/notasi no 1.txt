@@ -1,0 +1,10 @@
+judul : no 1
+Programer : Azmi Jalaluddin Amron
+Modify	: ke 1 pada 7:20 14/11/2022
+
+kamus
+-
+
+deskripsi
+	output "HELLO SEMARANG"
+	output "APAKABAR HARI INI"

@@ -1,0 +1,25 @@
+judul : membuat program menentukan jenis segitiga
+Programer	: Azmi Jalaluddin Amron
+Modify	: ke 1 pada 13.47 23/10/2022
+
+kamus 
+	a, b, c <-- integer
+
+deskripsi
+	output "Menentukan jenis segitiga"
+	output "Masukkan nilai panjang setiap sisi segitiga"
+	output "Panjang sisi a = " input a
+	output "Panjang sisi b = " input b
+	output "Panjang sisi c = " input c
+	if (c²=a²+b²) then
+		output "Segitiga tersebut adalah segitiga siku-siku."
+	else if ((a=b OR b=c OR a=c) AND (a≠b OR b≠c OR a≠c)) then
+		output "Segitiga tersebut adalah segitiga sama kaki."
+	else if (a=b AND b=c AND c=a) then
+		output "Segitiga tersebut adalah segitiga sama sisi."
+	else if (a≠b AND b≠c AND c≠a) then
+		output "Segitiga tersebut adalah segitiga sembarang."
+	else if (c²>a²+b²) then
+		output "Segitiga tersebut adalah segitiga tumpul."
+	else if (c²<a²+b²) then
+		output "Segitiga tersebut adalah segitiga lancip."

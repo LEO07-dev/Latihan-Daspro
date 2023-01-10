@@ -1,0 +1,26 @@
+judul
+Membuat program mengurutkan ranking
+Programer	: Azmi Jalaluddin Amron
+Modify	: 20.33 29/09/2022
+
+	A≠B, B≠C, C≠A //Jadi 3 nilai tersebut itu gak boleh sama nilainya
+kamus
+	A, B, C <-- integer
+
+deskripsi
+	output "Mari mengurutkan dari terkecil sampai yang terbesar"
+	output "Masukkan tiga nilai sebagai perbandingan"
+	output "Masukkan nilai pertama : " input A
+	output "Masukkan nilai kedua   : " input B
+	output "Masukkan nilai ketiga  : " input C
+	depend on (A, B)
+		A < B : depend on (B, C)
+				B < C : output (A, B, C)
+				B > C : depend on (A,C)
+					c > A : output (A, C, B)
+					C < A : output (C, A, B)
+		A > B : depend on (A, C)
+				A < C : output (B, A, C)
+				A > C : depend on (B, C)
+					B < C : output (B, C, A)
+					B > C : output (C, B, A)

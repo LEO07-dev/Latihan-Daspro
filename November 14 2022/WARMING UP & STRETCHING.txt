@@ -1,0 +1,116 @@
+warming up & stretching
+--- notasi & coding ---
+--- typing skill-------
+----- SKALI LAGI 
+-----NOTASIKAN DULU YA BOOSS----
+
+1. 	HELO SEMARANG 
+	APAKABAR HARI INI
+
+
+2. 	A = 1.9   Be = input    Ce = 20
+	*) 	A * Be = ?
+	**) 	A + Ce * Be =
+	***)	rubah A --> 20   Ce --> 1.9
+
+3. 	pada nomor 1, Assigment kan ke helo dan kabar (string)
+	helo = "HELO SEMARANG"
+	kabar = "APAKABAR HARI INI" 
+	outputkan helo dan kabar
+
+4. 	pada nomor 2, A Be Ce (input)
+	mana yang lebih besar?
+
+5. 	ada bilangan sebanyak N, (integer)
+	masukkan bilangan sebanyak N tersebut
+	gunakan repeat until
+
+6. 	merujuk nomor 2 dan 3, carilah data yang kalian mau cari (var= CARI)
+	// JUDUL
+		CARI MENCARI
+	// KAMUS
+		A <-- real
+		Be Ce <-- integer
+		CARI <-- integer
+
+	// DISKRIPSI	
+		input A, Be, Ce
+		input CARI
+		if (A = CARI) then
+			output "ketemu seng tak golekki" 
+		else 	if (Be = CARI) then
+				output "ketemu seng tak golekki" 
+			else	if (Ce = CARI) then
+					output "ketemu seng tak golekki" 
+				else
+					ouput "tidak ktemu"
+
+
+7. 	cermati A Be Ce dan N bilangan, 
+	maka terbentuklah ARRAY
+	// KAMUS
+		DATANE <-- [1..7] array of integer   --> di c++   int DATANE[7];
+		//silakan di coba input ke DATANE pakai loop 
+
+8. 	dengan menggunakan no 7 kita, men CARI
+		// KAMUS
+		DATANE <-- [1..7] array of integer
+		X,CARI <-- integer
+
+		// DISKRIPSI
+		x <-- 1,  
+		while(x < 8)
+		{
+			input DATANE[x]
+			x <-- x + 1	
+		}
+		
+		input CARI
+		x <-- 1,  input CARI
+		while(x < 8)
+		{
+			if(DATANE[x] = CARI)
+				{
+					output "KETEMU NDES ",CARI "di lokasi",X
+				}
+			x <-- x + 1	
+		}
+
+	
+9. 	merujuk nomor 4
+		
+		// KAMUS
+		DATANE <-- [1..7] array of integer
+		Y,X,baskom <-- integer
+
+		// DISKRIPSI
+		x <-- 1,  
+		while(x < 8)
+		{
+			input DATANE[x]
+			x <-- x + 1	
+		}
+		
+		x <-- 1
+		while(x < 7)    // sampai N - 1
+		{
+			y <-- x + 1	// dari awal + 1
+			while(y<8)	// sampai dengan N	
+			{
+				if(DATANE[x] > DATANE[y])
+				{
+					baskom <-- DATANE[x]
+					DATANE[y] <-- DATANE[x]
+					DATANE[x] <-- baskom
+				}
+				y <-- y + 1
+			x <-- x + 1	
+		}
+
+		// bar di sorting
+		x <-- 1,  
+		while(x < 8)
+		{
+			input DATANE[x]
+			x <-- x + 1	
+		}

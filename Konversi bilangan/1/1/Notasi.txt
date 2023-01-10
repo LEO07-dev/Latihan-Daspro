@@ -1,0 +1,28 @@
+Judul : Program Konversi Bilangan Decimal-Biner-Octal-Hexa
+Programer	: Azmi Jalaluddin Amron
+Modify	: ke 1 pada 19.35 16/10/2022
+
+Kamus
+	D, S, B <-- Integer
+	
+
+Deskripsi
+	output "Program sederhana untuk konversi bilangan Decimal-Biner-Octal-Hexa"
+	output "Masukkan Bilangan yang akan dikonversi dalam bentuk Desimal ? " input D
+
+	S=Dmod2
+	B=D÷2
+	outpu Biner
+	
+	while (D÷2=0 OR D÷2=1) do
+	{
+		output "  ", D		^
+		output "2---------", S	|		//Intinya biner dari decimal itu nulis nya dari bawah ke atas jadi hasil bagi terakhir ke sisa bagi
+		output "  ", B		|	
+		-------------------------
+	}
+
+	cout << angka biner
+		
+
+//128 64 32 16 8 4 2 1 //kelipatan sebelumnya

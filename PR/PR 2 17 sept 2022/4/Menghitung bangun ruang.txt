@@ -1,0 +1,19 @@
+judul
+	menghitung bangun ruang kubus
+	programer	: Azmi Jalaluddin Amron
+	modify	: 20 sept 2022
+
+kamus
+	S, LP, V, TS <-- integer (S = panjang rusuk, LP = luas permukaan, V = volume, TS = Total panjang rusuk)
+	
+
+deskripsi
+	output "Menghitung nilai sebuah kubus"
+	output "Masukkan nilai rusukknya" input S output " cm"
+	LP = 6 × S^2
+	V  = S^3
+	TS = 12 × S
+	output "Nilai Luas Permukaan bangun ruang kubus adalah ", LP, " cm^2."
+	output "Total panjang dari 12 rusuk kubus adalah ", TS, " cm."
+	output "Nilai volume kubus adalah ", v, " cm^3."
+	

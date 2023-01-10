@@ -1,0 +1,71 @@
+//judul
+/*
+Membuat Program Deteksi Mahasiswa
+Programe    : Azmi Jalaluddin Amron
+Modify      : ke 1 pada 3 Oktober 2022
+*/
+
+#include <iostream>
+using namespace std;
+
+//kamus
+    char NIM[20]; //NIM dengan array agar bisa lebih banyak karakter
+    char F, J, P;
+    char choice; //saya mau nambahin looping jadi saya buat ini
+
+
+//deskripsi
+    int main()
+    {
+        //basa-basi dulu
+        cout << "Mari kita cari tahu kalian itu Mahasiswa Udinus dari fakultas mana dan program studi apa beserta jenjang kalian.\n";
+        cout << "Silahkan masukkan NIM kalian seperti contoh di bawah ini." << endl;
+        cout << "Contoh input nim => A11.20xx.xxxxx atau B11.20xx.xxxxx ." << endl; //sekedar contoh penulisan NIM
+        cout << endl << endl;
+
+        //awal dari bagian yang akan dilooping
+        cout << "Masukkan NIM Anda :"; cin >> NIM;
+        
+        switch (toupper(NIM[0]))
+        {
+            case 'A' :
+            {
+                cout << "Anda adalah mahasiswa jurusan FIK." << endl;;
+                switch (toupper(NIM[1]))
+                {
+                	case '1' :
+                	{
+	                	cout << "Anda berada pada jenjang S1." << endl;
+	                	break;
+	                }
+	                
+	                case '2' :
+	                {
+                		cout << "Anda berada pada jenjang D3." << endl;	
+                		break;
+                	}
+                	
+                	default :
+                	{
+	                	cout << "Anda merasa lelah.";
+	                	break;
+	                }
+                }
+                break;
+            }
+
+            case 'B' :
+            {
+                cout << "Anda adalah Mahasiswa jurusan FEB." << endl;
+                break;
+            }
+
+            default :
+            {
+                cout << "Anda anak mana?";
+                break;
+            }
+        }
+    }
+
+            

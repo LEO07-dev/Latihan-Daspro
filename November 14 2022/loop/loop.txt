@@ -1,0 +1,27 @@
+judul	: membuat masukkan matkul dengan loop
+Programer	: Azmi Jalaluddin Amron
+Modify		: ke 1 pada 6:32 14/11/2022
+
+kamus
+	a : array [1..7] of string
+	b : array [1..7] of integer
+	choice <-- char
+	i <-- integer	
+
+deskripsi
+	output	"Silahkan masukkan matkul dan nilainya"
+	i=1
+	repeat
+		output "Masukkan nama mata kuliah : " input a[i]
+		output "Masukkan nilai		  : " input b[i]
+		
+		output "Ada mata kuliah lain ? "
+		input choice
+		i=i+1
+	until (choice=Y OR choice=y)
+	
+	while (i>=0) do
+		output "Mata kuliah : " a[i]
+		output "Nilai	    : " b[i]
+		
+		

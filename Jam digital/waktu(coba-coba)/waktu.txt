@@ -1,0 +1,13 @@
+judul 
+menghitung lama waktu
+programer	: azmi jalaluddin amron
+modify	: 16 September 2022
+
+kamus 
+	JHH, JMM, JSS <-- integer
+	J = Jam
+	JHH = menunjukkan waktu 24 jam [0...23}
+	JMM = menujukkan waktu 60 menit [0...59]
+	JSS = menunjukkan waktu 60 detik [0...59
+
+diskripsi
